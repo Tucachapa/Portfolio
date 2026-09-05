@@ -1,0 +1,6 @@
+.claude/
+.agents/
+.codex/
+.impeccable/
+skills-lock.json
+.DS_Store

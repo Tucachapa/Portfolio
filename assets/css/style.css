@@ -291,6 +291,42 @@ section.project-body{padding:80px 0;}
 .lightbox .lb-next{right:6px;top:50%;transform:translateY(-50%);}
 .lightbox .lb-count{position:absolute;bottom:18px;left:0;right:0;text-align:center;color:#E7E3D8;font-size:12.5px;letter-spacing:.04em;}
 
+/* multi-part project pages (urban + memoire + architecture) */
+.part-divider{
+  padding:96px 0 32px;border-top:1px solid var(--border);margin-top:24px;
+  display:flex;align-items:baseline;gap:20px;flex-wrap:wrap;
+}
+.part-divider .part-num{
+  font-family:'Fraunces',serif;font-size:clamp(40px,7vw,72px);color:var(--accent);
+  line-height:1;font-weight:400;
+}
+.part-divider .part-title h2{font-size:clamp(24px,4vw,38px);}
+.part-divider .part-title .sub{font-size:13.5px;color:var(--muted);margin-top:6px;}
+.part-credit{
+  font-size:12.5px;color:var(--muted);margin:-10px 0 40px;padding-bottom:24px;
+  border-bottom:1px solid var(--border);
+}
+.memoire-card{
+  display:grid;grid-template-columns:0.7fr 1.3fr;gap:56px;align-items:center;
+  padding:8px 0 24px;
+}
+.memoire-card figure{margin:0;}
+.memoire-card figure img{border-radius:2px;box-shadow:0 30px 60px rgba(20,18,15,0.18);}
+.memoire-card .text p{color:#3C3833;max-width:56ch;}
+.memoire-card .thesis-title{font-family:'Fraunces',serif;font-size:clamp(20px,3vw,28px);margin-bottom:14px;font-style:italic;}
+.axes-list{list-style:none;margin:22px 0 0;padding:0;display:grid;gap:10px;}
+.axes-list li{font-size:13.5px;color:var(--muted);padding-left:18px;position:relative;}
+.axes-list li::before{content:"—";position:absolute;left:0;color:var(--accent);}
+@media (max-width:800px){
+  .memoire-card{grid-template-columns:1fr;gap:28px;}
+}
+
+.video-wrap{
+  position:relative;width:100%;border-radius:2px;overflow:hidden;
+  background:#000;margin:8px 0 0;box-shadow:0 30px 60px rgba(20,18,15,0.18);
+}
+.video-wrap video{width:100%;display:block;max-height:80vh;}
+
 /* project prev/next nav */
 .project-nav{
   border-top:1px solid var(--border);display:grid;grid-template-columns:1fr 1fr;
